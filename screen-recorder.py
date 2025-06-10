@@ -4,8 +4,8 @@ import numpy as np
 
 # Creating the VideoWriter object
 resolution = (1920, 1080)
-codec = cv2.VideoWriter.fourcc(*'XVID')
-filename = 'recording.mp4'
+codec = cv2.VideoWriter_fourcc(*'XVID')
+filename = 'recording.avi'
 fps = 60.0
 out = cv2.VideoWriter(filename, codec, fps, resolution)
 
